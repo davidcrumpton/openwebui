@@ -30,8 +30,6 @@ This tool is meant to be used for Zabbix.  It uses the Zabbix API to get informa
 
 Use the `get_hosts` function to get a list of all hosts in the Zabbix instance.  Use the `get_items` function to get information about a specific item.  Use the `get_triggers` function to get information about a specific trigger.  Use the `get_events` function to get information about a specific event.
 
-
-
 ### Wiki Tool
 
 This tool is meant to be used for Wiki.js.  It uses the Wiki.js API to get information about the Wiki.js instance.  The Wiki.js instance is located at `http://localhost:8080`.  It uses a username and password for authentication.  You can get the username and password by going to the Wiki.js UI and selecting "Administration" and then "Users".
