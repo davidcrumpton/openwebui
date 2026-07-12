@@ -130,3 +130,10 @@ class Tools:
 
         except Exception as e:
             return json.dumps({"error": str(e)}, indent=2)
+
+
+if __name__ == "__main__":
+    import sys
+
+    query = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "NetBSD"
+    print(Tools().search(query))

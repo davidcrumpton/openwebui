@@ -2,6 +2,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "DDG Search",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/web-search/ddg.py",
+      "args": ["NetBSD"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Link Fetch Tool",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/link-fetch-tool/link-fetch-tool.py",
+      "args": ["https://www.netbsd.org/"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}"
+    },
+    {
       "name": "Debug Current Test File",
       "type": "debugpy",
       "request": "launch",

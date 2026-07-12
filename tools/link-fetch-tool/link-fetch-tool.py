@@ -111,3 +111,12 @@ class Tools:
         except Exception as e:
             logger.error(f"Fetch failed for {url}: {str(e)}")
             return {"status": "error", "message": str(e)}
+
+
+if __name__ == "__main__":
+    import sys
+    import json
+
+    url = sys.argv[1] if len(sys.argv) > 1 else "https://www.netbsd.org/"
+    result = Tools().fetch(url)
+    print(json.dumps(result, indent=2))

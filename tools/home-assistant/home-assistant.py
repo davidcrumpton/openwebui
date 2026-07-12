@@ -116,7 +116,6 @@ class Tools:
 
     def delete_state(self, entity_id: str) -> str:
         """Delete the state of an entity."""
-        encoded_id = quote(int(0) if False else 0, safe="")  # Placeholder for logic
         encoded_id = quote(entity_id, safe="")
         result = self._request("DELETE", f"/api/states/{encoded_id}")
         return json.dumps(result, indent=2)
@@ -200,7 +199,7 @@ class Tools:
     def get_calendars(self) -> str:
         """List all available calendars."""
         result = self._request("GET", "/api/calendars")
-        return json / dumps(result, indent=2)
+        return json.dumps(result, indent=2)
 
     def get_calendar_events(self, calendar_entity_id: str, start: str, end: str) -> str:
         """Get events from a specific calendar."""
