@@ -55,3 +55,17 @@ This tool does a GET request to retrieve a link and returns the data stripped of
 ### GitLab Tool
 
 This tool is used to manage my GitLab repos.  It uses the GitLab API to get information about my GitLab instance.  The GitLab instance is located at `http://localhost:8080`.  It uses a username and password for authentication.  You can get the username and password by going to the GitLab UI and selecting "Administration" and then "Users".  Use the `list_projects` function to list all projects.  Use the `get_project` function to get information about a specific project.  Use the `get_project_content` function to get the content of a specific file in a project.  Use the `get_project_tree` function to get the tree structure of a project.  Use the `search_gitlab` function to search the GitLab instance.
+
+## Examples
+
+### Testing tools with pytest
+
+The environment is setup to support VS Code and running tests on the tools.  Use the `tests` directory to run the tests.  Use `pytest --cov` to run the tests with coverage.  Use `pytest --cov-report=term` to run the tests with coverage and print the report to the terminal.  You can also hit the tests button in VS Code.
+
+![Testing tools with pytest](images/tests.png)
+
+### Debugging tools with VS Code
+
+The environment is setup to support VS Code and debugging the tools.  Use the `tests` directory to run the tests.  Use `pytest --cov` to run the tests with coverage.  Use `pytest --cov-report=term` to run the tests with coverage and print the report to the terminal.  You can also hit the tests button in VS Code.
+
+![Debugging tools with VS Code](images/debug.png)
