@@ -3,7 +3,7 @@ title: GitLab Tool
 author: david crumpton
 description: >
     CRUD Calls to manage your GitLab Repo
-version: 2.1.0
+version: 2.1.1
 license: MIT
 """
 
@@ -1412,9 +1412,6 @@ class Tools:
 #####################################
 # Automation support tools
 #####################################
-# ------------------------------------------------
-    # Merge Request / Branch Hygiene
-    # ------------------------------------------------
 
     @staticmethod
     def _parse_gitlab_ts(ts: str) -> Optional[datetime]:
